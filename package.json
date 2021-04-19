@@ -1,6 +1,5 @@
 {
 	"homepage": "https://ztranquilizer.github.io/todoOnReact",
-	"start_url": ".",
 	"name": "react-test-app",
 	"version": "0.1.0",
 	"private": true,
