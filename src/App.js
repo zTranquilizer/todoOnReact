@@ -8,12 +8,12 @@ export { App };
 function App() {
 	const [todos, setTodos] = React.useState([]);
 
-	useEffect(() => {
-		fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
-			.then(response => response.json())
-			.then(todos => setTodos(todos))
-			.catch(err => console.error(err))
-	}, []);
+	// useEffect(() => {
+	// 	fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
+	// 		.then(response => response.json())
+	// 		.then(todos => setTodos(todos))
+	// 		.catch(err => console.error(err))
+	// }, []);
 
 	function toggleTodo(id) {
 		setTodos(todos.map(todo => {

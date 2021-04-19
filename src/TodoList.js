@@ -7,7 +7,7 @@ export { TodoList };
 function TodoList(props) {
 
 	return (
-		<ul>
+		<ul className="todo-list">
 			{props.todos.map(item => {
 				return <TodoItem
 					key={item.id}

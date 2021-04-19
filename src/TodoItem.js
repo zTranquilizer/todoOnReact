@@ -25,7 +25,7 @@ function TodoItem(props) {
 	}
 
 	return (
-		<li style={styles.li}>
+		<li style={styles.li} className="todo-item">
 			<div className={classes.join('')}>
 				<input
 					type="checkbox"
@@ -35,7 +35,7 @@ function TodoItem(props) {
 				/>
 				<span >{props.todo.title}</span>
 			</div>
-			<button onClick={() => removeTodo(props.todo.id)}>&times;</button>
+			<button className="button-remove" onClick={() => removeTodo(props.todo.id)}>&times;</button>
 		</li>
 	);
 }
